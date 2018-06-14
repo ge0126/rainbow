@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/rainbow_icon"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="40dp"
+            android:src="@drawable/rainbow" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="#7f7f7f" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp">
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="40dp"
+                android:background="#ebf7ff"
+                android:gravity="center_vertical|center"
+                android:text="Start"
+                android:textColor="#7f7f7f"
+                android:textSize="18dp"
+                android:onClick="ck_start"/>
+
+            <Button
+                android:id="@+id/camera"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="40dp"
+                android:background="#ebf7ff"
+                android:gravity="center_vertical|center"
+                android:text="Camera"
+                android:textColor="#7f7f7f"
+                android:textSize="18dp"
+                android:onClick="ck_camera"/>
+
+            <Button
+                android:id="@+id/about"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="210dp"
+                android:background="#f7efff"
+                android:gravity="center_vertical|center"
+                android:text="About as"
+                android:textColor="#7f7f7f"
+                android:textSize="18dp"
+                android:onClick="ck_about"/>
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="210dp"
+                android:background="#f7efff"
+                android:gravity="center_vertical|center"
+                android:text="Close"
+                android:textColor="#7f7f7f"
+                android:textSize="18dp"
+                android:onClick="ck_close"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="#7f7f7f" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Chosun University / Code-no3 / for Capstone design"
+            android:textColor="#7f7f7f"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
